@@ -110,7 +110,7 @@ class App extends Component {
 		}
 
     return (
-      <div className="App">
+      <div className="flex justify-center">
         <header>
           <h1 className="bg-purple-600 text-white text-center max-w-2xl font-mono shadow-xl text-5xl font-medium m-auto mt-5 mb-5 p-5 border-gray-400 rounded-lg">
             PLANS FOR DAY

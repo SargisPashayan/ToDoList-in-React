@@ -6,7 +6,7 @@ export default class TodoItem extends Component {
       this.props;
 
     return (
-      <li className={`flex w-full p-4 mb-2 justify-between items-center ${completed ? "bg-gray-400 " : "bg-green-300"}`}>
+      <li className={`flex  p-4 mb-2 justify-between items-center max-w-2xl ${completed ? "bg-gray-400 " : "bg-green-300"}`}>
         <h6
           className={`
           ml-2 text-xl font-sans font-medium
