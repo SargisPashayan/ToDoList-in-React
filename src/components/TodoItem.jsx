@@ -6,15 +6,17 @@ export default class TodoItem extends Component {
       this.props;
 
     return (
-      <li className="list-group-item d-flex justify-content-between my-2">
+      <li className={`flex w-full p-4 mb-2 justify-between items-center ${completed ? "bg-gray-400 " : "bg-green-300"}`}>
         <h6
-          className={`mt-1 mb-0 align-middle ${
-            completed ? "completed-task" : ""
-          }`}
+          className={`
+          ml-2 text-xl font-sans font-medium
+          ${completed ? "text-white line-through" : "text-gray-700"}
+        `}
         >
           {title}
         </h6>
-        <div className="todo-icon">
+        
+        <div className="w-1/6 flex justify-between items-center mr-2">
           <span
             className={`mx-2 ${completed ? "text-success" : "text-secondary"}`}
             onClick={() => handleDoneTask(id)}
