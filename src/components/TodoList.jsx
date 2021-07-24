@@ -15,23 +15,23 @@ class TodoList extends Component {
 
     return (
       <div>
-        <div className="flex justify-center flex-auto flex space-x-9">
+        <div className="flex justify-center flex-auto flex space-x-9 m-auto mt-5 mb-5 p-2">
           <button
-            className="hover:bg-gray-50 hover:text-blue-800 bg-purple-600 rounded-md text-white px-5 text-xl py-1"
+            className="hover:bg-purple-100 hover:text-blue-800 bg-purple-600 rounded-md text-white px-5 text-xl py-1"
             type="submit"
             onClick={() => updateTodosToShow("all")}
           >
             ALL
           </button>
           <button
-            className="hover:bg-gray-50 hover:text-blue-800 bg-purple-600 rounded-md text-white px-5  text-xl py-1"
+            className="hover:bg-purple-100 hover:text-blue-800 bg-purple-600 rounded-md text-white px-5  text-xl py-1"
             type="submit"
             onClick={() => updateTodosToShow("done")}
           >
             DONE
           </button>
           <button
-            className="hover:bg-gray-50 hover:text-blue-800 bg-purple-600 rounded-md text-white px-5 text-xl py-1"
+            className="hover:bg-purple-100 hover:text-blue-800 bg-purple-600 rounded-md text-white px-5 text-xl py-1"
             type="submit"
             onClick={() => updateTodosToShow("todo")}
           >
@@ -58,7 +58,7 @@ class TodoList extends Component {
             <div className="flex justify-center flex-auto flex space-x-3">
               <button
                 type="button"
-                className="hover:bg-gray-50 hover:text-red-800 bg-red-600 rounded-md text-white px-5 text-xl py-1"
+                className="hover:bg-red-100 hover:text-red-800 bg-red-600 rounded-md text-white px-5 text-xl py-1"
                 onClick={handleDeleteDoneTasks}
               >
                 Delete done tasks
@@ -66,7 +66,7 @@ class TodoList extends Component {
 
               <button
                 type="button"
-                className="hover:bg-gray-50 hover:text-red-800 bg-red-600 rounded-md text-white px-5 text-xl py-1"
+                className="hover:bg-red-100 hover:text-red-800 bg-red-600 rounded-md text-white px-5 text-xl py-1"
                 onClick={clearList}
               >
                 Delete all tasks

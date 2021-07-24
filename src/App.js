@@ -96,6 +96,17 @@ class App extends Component {
 		})
 	}
 
+  componentDidMount() {
+    const todos = JSON.parse(localStorage.getItem("todos"));
+
+    if (todos !== null) {
+      this.setState({ items: todos });
+    }
+  }
+
+  componentDidUpdate(prevState) { 
+    localStorage.setItem("todos", JSON.stringify(this.state.items));  
+  }
 
 
   render() {
@@ -118,7 +129,7 @@ class App extends Component {
           <TodoInput item={this.state.item}
 							handleChange={this.handleChange}
 							handleSubmit={this.handleSubmit}
-              editItem={this.editItem}/>
+              editItem={this.state.editItem}/>
           <h3 className=" text-purple-600 text-center font-mono shadow-xl text-5xl font-medium m-auto mt-5 mb-5 p-1">
             TODO LIST
           </h3>

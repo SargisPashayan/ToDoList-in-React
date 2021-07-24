@@ -17,7 +17,7 @@ class TodoInput extends Component {
               onChange={handleChange}
             ></input>
             <button
-              className="hover:bg-gray-50 hover:text-blue-800 bg-purple-600 rounded-md text-white px-5 text-xl py-1"
+              className="hover:bg-purple-100 hover:text-blue-800 bg-purple-600 rounded-md text-white px-5 text-xl py-1"
               type="submit"
             >
               {editItem ? 'Edit task' : 'Add new task'}
