@@ -3,6 +3,7 @@ import { v4 as uuid } from 'uuid';
 import './App.css';
 import TodoInput from './components/TodoInput';
 import TodoList from './components/TodoList';
+import PropTypes from "prop-types";
 
 
 class App extends Component {
@@ -149,3 +150,8 @@ class App extends Component {
  
 
 export default App;
+
+TodoInput.PropTypes = {
+	id: PropTypes.number,
+	editItem: PropTypes.bool
+  }
