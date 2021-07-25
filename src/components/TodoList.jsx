@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import TodoItem from "./TodoItem";
+import PropTypes from "prop-types";
 
 class TodoList extends Component {
   render() {
@@ -80,3 +81,9 @@ class TodoList extends Component {
 }
 
 export default TodoList;
+
+
+TodoItem.PropTypes = {
+  id: PropTypes.number,
+  title: PropTypes.string
+}
