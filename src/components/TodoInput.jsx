@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 
 class TodoInput extends Component {
-    
   render() {
-    const {item, handleChange, handleSubmit, editItem} = this.props;
+    const { item, handleChange, handleSubmit, editItem } = this.props;
 
     return (
       <div className="flex justify-center">
@@ -20,7 +19,7 @@ class TodoInput extends Component {
               className="hover:bg-purple-100 hover:text-blue-800 bg-purple-600 rounded-md text-white px-5 text-xl py-1"
               type="submit"
             >
-              {editItem ? 'Edit task' : 'Add new task'}
+              {editItem ? "Edit task" : "Add new task"}
             </button>
           </div>
         </form>

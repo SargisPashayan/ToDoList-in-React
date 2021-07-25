@@ -39,8 +39,10 @@ class TodoList extends Component {
             TODO
           </button>
         </div>
-        
-       {items.length === 0 ? "" : 
+
+        {items.length === 0 ? (
+          ""
+        ) : (
           <ul className="list-disc space-y-2">
             {items.map((item) => {
               return (
@@ -74,7 +76,7 @@ class TodoList extends Component {
               </button>
             </div>
           </ul>
-        } 
+        )}
       </div>
     );
   }
@@ -82,8 +84,7 @@ class TodoList extends Component {
 
 export default TodoList;
 
-
 TodoItem.PropTypes = {
   id: PropTypes.number,
-  title: PropTypes.string
-}
+  title: PropTypes.string,
+};
